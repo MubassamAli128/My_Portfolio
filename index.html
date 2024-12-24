@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My-Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="icon" href="./assets/resume.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.6.0/css/all.css">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body class="bg-black text-white m-0 pt-2">
+    <div class="w-full overflow-hidden" id="background-content">
+        <section id="home"
+            class="flex flex-col-reverse gap-9 bg-black md:flex-row w-[100%]  mx-auto items-center justify-center p-14 pt-24 md:pt-60">
+            <!-- Navbar -->
+            <header id="home"
+                class="header p-5 transition-all w-[100%] bg-black fixed left-0 top-0 z-10 mx-auto flex justify-between items-center">
+                <h1 class="anim pl-8 transition-all text-lg font-bold">Mubassam<span
+                        class="text-[#01ffe9]">Ali</span>
+                </h1>
+                <div id="theme-toggle"
+                    class="fixed md:top-4 md:right-6 right-16 cursor-pointer p-2 pl-3 pr-3 bg-[#01ffe9] text-black rounded-full hover:bg-[#00d6b5] transition">
+                    <i id="theme-icon" class="fa-solid fa-sun"></i>
+                </div>
+                <div class="md:hidden">
+                    <button id="menu-btn" class="text-3xl focus:outline-none">
+                        <i class="fa-solid fa-bars text-[#01ffe9]"></i>
+                    </button>
+                </div>
+
+                <!-- Navbar Links -->
+                <nav class="hidden md:block">
+                    <ul id="nav-links" class="flex space-x-8 text-lg pr-32">
+                        <li><a href="#home" class="font-semibold nav-link hover:text-[#01ffe9]">Home</a>
+                        </li>
+                        <li><a href="#education" class="font-semibold nav-link hover:text-[#01ffe9]">Education</a>
+                        </li>
+                        <li><a href="#services" class="font-semibold nav-link hover:text-[#01ffe9]">Services</a>
+                        </li>
+                        <li><a href="#projects" class="font-semibold nav-link hover:text-[#01ffe9]">Projects</a>
+                        </li>
+                    </ul>
+                </nav>
+
+                <!-- Mobile Navigation (Hidden by default) -->
+                <nav id="mobile-nav"
+                    class="hidden absolute top-16 right-4 bg-[#333] overflow-hidden z-10 w-40 p-4 rounded-lg shadow-lg">
+                    <ul>
+                        <li><a href="#home" class=" block py-2 px-4 text-white hover:text-[#01ffe9]">Home</a></li>
+                        <li><a href="#education" class="block py-2 px-4 text-white hover:text-[#01ffe9]">Education</a>
+                        </li>
+                        <li><a href="#services" class="block py-2 px-4 text-white hover:text-[#01ffe9]">Services</a>
+                        </li>
+                        <li><a href="#projects" class="block py-2 px-4 text-white hover:text-[#01ffe9]">Testimonials</a>
+                        </li>
+                    </ul>
+                </nav>
+            </header>
+
+            <!-- Hero Section -->
+            <div class="md:w-[50%] text-center md:text-left md:relative md:bottom-14">
+                <!-- Animated Name -->
+                <h2 id="name" class="text-4xl md:text-5xl lg:text-6xl font-bold mb-3"></h2>
+                <p class="text-xl md:text-2xl font-bold text-white mb-6">I'm a <span class="text-[#01ffe9]">UI / UX
+                        Designer</span></p>
+                <p class="text-sm font-semibold text-white mb-8">I'm a passionate UI/UX designer, crafting intuitive
+                    and visually compelling user experiences that prioritize functionality, creativity, and seamless
+                    interaction.</p>
+                <div class="flex justify-center md:justify-start space-x-4">
+                    <button id="hire" class="border border-[#01ffe9] hover:bg-[#01ffe9] py-2 px-6 rounded-full text-white font-bold hover:text-black">Hire Me</button>
+                    <button id="contact" class="border border-[#01ffe9] hover:bg-[#01ffe9] py-2 px-6 rounded-full text-white font-bold hover:text-black">Contact</button>
+                </div>
+
+                <!-- Animated Social Icons -->
+                <div class="flex space-x-4 mt-8 justify-center md:justify-start">
+                    <a id="icon1" href="https://www.youtube.com/@creativeprogramming128" target="_blank"
+                        class="icon anim2 text-[#01ffe9] p-1 pl-2 pr-2 border-2 border-[#01ffe9] rounded-full">
+                        <i class="fa-brands fa-youtube text-xl"></i>
+                    </a>
+                    <a id="icon2" href="https://github.com/MubassamAli128" target="_blank"
+                        class="icon anim2 text-[#01ffe9] p-1 pl-2 pr-2 border-2 border-[#01ffe9] rounded-full">
+                        <i class="fa-brands fa-github text-xl"></i>
+                    </a>
+                    <a id="icon3" href="https://www.linkedin.com/in/mubassamali128/" target="_blank"
+                        class="icon anim2 text-[#01ffe9] p-1 pl-2 pr-2 border-2 border-[#01ffe9] rounded-full">
+                        <i class="fa-brands fa-linkedin text-xl"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="md:w-[50%] w-full mt-0 md:pl-10 md:relative md:bottom-14  md:mt-0 flex justify-center">
+                <div class="relative rounded-full group">
+                    <div
+                        class="absolute w-52 h-52 md:w-80 md:h-80 bg-gradient-to-r from-[#14837d] to-[#0bc8b6] blur-sm rounded-full transition duration-300 ease-in-out group-hover:shadow-[#0ffee7_0px_4px_45px,#0ffee7_0px_-12px_30px,#0ffee7_0px_4px_50px,#0ffee7_0px_12px_30px,_0px_-3px_5px] focus:outline-none">
+                    </div>
+                    <div class="rotate-border  relative bottom-[0px] right-[0px] md:bottom-[12px] md:right-[12px]">
+                        <img src="./assets/Creative_Programming.jpg" alt="MubassamAli"
+                            class=" object-cover object-right-top w-52 h-52 md:w-80 md:h-80 rounded-full relative focus:outline-none">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education Section -->
+
+        <section id="education"
+            class="p-14 pt-24  flex overflow-hidden flex-col gap-6 justify-center items-center w-full bg-[#131313]">
+            <div class="text-4xl md:text-5xl font-bold hover:text-[#01ffe9] anim2 transition-all">EDUCATION</div>
+            <div class="mt-4 flex gap-3 section">
+                <div>
+                    <div class="flex gap-0 md:gap-10">
+                        <div
+                            class="font-semibold slide text-white md:w-80  rounded-full border-2 flex flex-col items-end justify-end p-8 md:p-6 pr-4  md:pr-10 gap-2 border-[#01ffe9] bg-black">
+                            <div class="text-xl font-bold text-white">High School</div>
+                            <div class="text-xs font-semibold text-white text-start md:text-end">"I have complete 10th class with A-Grade."</div>
+                        </div>
+                        <div class="font-semibold text-white">2021</div>
+                    </div>
+                    <div class="flex gap-0 mt-52 md:gap-10">
+                        <div
+                            class="font-semibold slide3 text-white md:w-80 rounded-full border-2 flex flex-col items-end justify-end p-8 md:p-6 pr-4  md:pr-10 gap-2 border-[#01ffe9] bg-black">
+                            <div class="text-xl font-bold text-white">Skills Career Institute</div>
+                            <div class="text-xs font-semibold text-white text-start md:text-end">"I have learned C++, PYTHON, HTML, CSS, SCSS, TAILWINDCSS, VANILLA JS, TYPESCRIPT, REACT etc. from Skills Career Institute."</div>
+                        </div>
+                        <div class="font-semibold text-white">2024</div>
+                    </div>
+                </div>
+                <div class="w-1 flex flex-col justify-between items-center bg-[#01ffe9]">
+                    <div class="w-4 h-4 rounded-full bg-[#01ffe9]"></div>
+                    <div class="w-4 h-4 rounded-full bg-[#01ffe9]"></div>
+                    <div class="w-4 h-4 rounded-full bg-[#01ffe9]"></div>
+                    <div class="w-4 h-4 rounded-full bg-[#01ffe9]"></div>
+                </div>
+                <div>
+                    <div class="flex gap-0 md:gap-10 mt-40">
+                        <div class="font-semibold text-white">2023</div>
+                        <div
+                            class="font-semibold slide2 text-white rounded-full md:w-80 border-2 flex flex-col items-start justify-end p-8 md:p-6 pr-4  md:pr-10 gap-2 border-[#01ffe9] bg-black">
+                            <div class="text-xl font-bold text-white">College</div>
+                            <div class="text-xs font-semibold text-white text-start">"I have complete F.S.C (Pre-Engineering)."</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Services Section -->
+        <section id="services" class="p-20 overflow-hidden flex flex-col gap-12 items-center w-full bg-black">
+            <div class="text-4xl md:text-5xl font-bold hover:text-[#01ffe9] anim2 transition-all">Services</div>
+
+            <!-- Service Boxes Container -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-5 service-section">
+
+                <!-- UI Design Service -->
+                <div
+                    class="service-box opacity-0 transform transition-all duration-500 ease-linear bg-[#00f5d4] p-8 md:p-14 rounded-2xl hover:bg-white hover:scale-105">
+                    <h3 class="text-2xl font-bold mb-4 text-black">UI Design</h3>
+                    <p class="text-sm text-black font-semibold">
+                        "I craft intuitive, user-centered interfaces that blend creativity with functionality,
+                        delivering seamless digital experiences for users."
+                    </p>
+                </div>
+
+                <!-- Frontend Development Service -->
+                <div
+                    class="service-box opacity-0 transform transition-all duration-500 ease-linear bg-[#00f5d4] p-8 md:p-14 rounded-2xl hover:scale-105 hover:bg-white">
+                    <h3 class="text-2xl font-bold mb-4 text-black">Frontend Development</h3>
+                    <p class="text-sm text-black font-semibold">
+                        "I’m a passionate frontend developer, skilled in HTML, CSS, JavaScript, and responsive design,
+                        crafting seamless, user-focused web experiences."
+                    </p>
+                </div>
+
+                <!-- Backend Development Service -->
+                <div
+                    class="service-box opacity-0 transform transition-all duration-500 ease-linear bg-[#00f5d4] p-8 md:p-14 rounded-2xl hover:scale-105 hover:bg-white ">
+                    <h3 class="text-2xl font-bold mb-4 text-black">Backend Development</h3>
+                    <p class="text-sm text-black font-semibold">
+                        "I'm a backend developer specializing in server-side logic, APIs, databases, and ensuring
+                        seamless integration for scalable web applications."
+                    </p>
+                </div>
+
+                <!-- Testing Service -->
+                <div
+                    class="service-box opacity-0 transform transition-all duration-500 ease-linear bg-[#00f5d4] p-8 md:p-14 rounded-2xl hover:scale-105 hover:bg-white">
+                    <h3 class="text-2xl font-bold mb-4 text-black">Testing</h3>
+                    <p class="text-sm text-black font-semibold">
+                        "I Test web application ensures its functionality, performance, and security, providing a
+                        smooth, error-free user experience , responsiveness, overall user experience assessment."
+                    </p>
+                </div>
+
+            </div>
+        </section>
+        <!-- Testimonials Section -->
+
+        <section id="projects" class="py-20 px-5 pt-24 flex flex-col gap-10 items-center w-full bg-[#131313]">
+            <div class="text-4xl md:text-5xl font-bold hover:text-[#01ffe9] anim2 transition-all mb-10">Testimonials</div>
+            <div class="overflow-hidden w-full">
+                <h3 class="text-center p-4">No Testimonials yet!</h3>
+                <!-- <div
+                    class="flex gap-8 animate-scroll w-max hover:animation-paused">
+                    <div class="testimonial relative p-4 md:p-8 anim2 bg-black rounded-lg shadow-lg hover:scale-105 transition-transform duration-300">
+                        <div class="flex flex-col items-center">
+                            <img src="./assets/i-7.jpg" alt="Person"
+                                class="w-32 h-32  object-cover object-left-top rounded-full border-4 border-[#00f5d4] shadow-lg mb-4">
+                            <h3 class="text-2xl font-bold text-white">Thomas</h3>
+                            <p class="text-yellow-400 text-xl">★★★★★</p>
+                            <p class="mt-4 text-md text-gray-300 text-center">"Lorem ipsum dolor sit amet consectetur adipisicing elit."</p>
+                        </div>
+                    </div>
+                    <div class="testimonial relative p-4 md:p-8 anim2 bg-black rounded-lg shadow-lg hover:scale-105 transition-transform duration-300">
+                        <div class="flex flex-col items-center">
+                            <img src="./assets/g1.avif" alt="Person"
+                                class="w-32 h-32 object-cover rounded-full border-4 border-[#00f5d4] shadow-lg mb-4">
+                            <h3 class="text-2xl font-bold text-white">Julia</h3>
+                            <p class="text-yellow-400">★★★★★</p>
+                            <p class="mt-4 text-sm text-gray-300 text-center">"Lorem ipsum dolor sit amet consectetur adipisicing elit."</p>
+                        </div>
+                    </div>
+                    <div class="testimonial relative p-4 md:p-8 anim2 bg-black rounded-lg shadow-lg hover:scale-105 transition-transform duration-300">
+                        <div class="flex flex-col items-center">
+                            <img src="./assets/girl.jpg" alt="Person"
+                                class="w-32 h-32 object-cover rounded-full border-4 border-[#00f5d4] shadow-lg mb-4">
+                            <h3 class="text-2xl font-bold text-white">Jane</h3>
+                            <p class="text-yellow-400">★★★★★</p>
+                            <p class="mt-4 text-sm text-gray-300 text-center">"Lorem ipsum dolor sit amet consectetur adipisicing elit."</p>
+                        </div>
+                    </div>
+                    
+                    <div class="testimonial relative p-4 md:p-8 anim2 bg-black rounded-lg shadow-lg hover:scale-105 transition-transform duration-300">
+                        <div class="flex flex-col items-center">
+                            <img src="./assets/i-7.jpg" alt="Person"
+                                class="w-32 h-32  object-cover object-left-top rounded-full border-4 border-[#00f5d4] shadow-lg mb-4">
+                            <h3 class="text-2xl font-bold text-white">Thomas</h3>
+                            <p class="text-yellow-400 text-xl">★★★★★</p>
+                            <p class="mt-4 text-md text-gray-300 text-center">"Lorem ipsum dolor sit amet consectetur adipisicing elit."</p>
+                        </div>
+                    </div>
+                    <div class="testimonial relative p-4 md:p-8 anim2 bg-black rounded-lg shadow-lg hover:scale-105 transition-transform duration-300">
+                        <div class="flex flex-col items-center">
+                            <img src="./assets/g1.avif" alt="Person"
+                                class="w-32 h-32 object-cover rounded-full border-4 border-[#00f5d4] shadow-lg mb-4">
+                            <h3 class="text-2xl font-bold text-white">Julia</h3>
+                            <p class="text-yellow-400">★★★★★</p>
+                            <p class="mt-4 text-sm text-gray-300 text-center">"Lorem ipsum dolor sit amet consectetur adipisicing elit."</p>
+                        </div>
+                    </div>
+                    <div class="testimonial relative p-4 md:p-8 anim2 bg-black rounded-lg shadow-lg hover:scale-105 transition-transform duration-300">
+                        <div class="flex flex-col items-center">
+                            <img src="./assets/girl.jpg" alt="Person"
+                                class="w-32 h-32 object-cover rounded-full border-4 border-[#00f5d4] shadow-lg mb-4">
+                            <h3 class="text-2xl font-bold text-white">Jane</h3>
+                            <p class="text-yellow-400">★★★★★</p>
+                            <p class="mt-4 text-sm text-gray-300 text-center">"Lorem ipsum dolor sit amet consectetur adipisicing elit."</p>
+                        </div>
+                    </div>
+                </div> -->
+            </div>
+        </section>
+
+        <hr class="w-full border border-[#1b1b1b]">
+        <button id="scrollBtn"
+            class="hidden w-12 fixed bottom-8 right-8 bg-[#01ffe9] text-black p-3 rounded-full shadow-md hover:bg-[#01ffe9]">
+            <i class=" fa-solid fa-up"></i>
+        </button>
+        <footer id="footer" class="bg-[#131313] py-10 text-center">
+            <div id="footer-text" class="flex justify-center space-x-6 mb-6">
+                <!-- Social Media Icons -->
+                <a href="https://www.linkedin.com/in/mubassamali128/" target="_blank"
+                    class="text-[#01ffe9] hover:scale-125 hover:text-white transition">
+                    <i class="fab fa-linkedin-in text-xl"></i>
+                </a>
+                <a href="https://www.youtube.com/@creativeprogramming128" target="_blank"
+                    class="text-[#01ffe9] hover:text-white hover:scale-125 transition">
+                    <i class="fa-brands fa-youtube text-xl"></i>
+                </a>
+                <a href="https://github.com/MubassamAli128" target="_blank"
+                    class="text-[#01ffe9] hover:text-white hover:scale-125 transition">
+                    <i class="fa-brands fa-github text-xl"></i>
+                </a>
+            </div>
+            <!-- Footer Links -->
+            <div class="flex justify-center space-x-4 md:space-x-8 text-sm text-[#01ffe9]">
+                <a href="#home" class="hover:text-white transition">About Me</a>
+                <a href="#services" class="hover:text-white transition">Services</a>
+                <a href="#projects" class="hover:text-white transition">Testimonials</a>
+            </div>
+            <!-- Footer Copyright -->
+            <div class="mt-4 text-sm text-gray-400">
+                © Mubassam Ali | All Rights Reserved
+            </div>
+        </footer>
+    </div>
+    <!-- Popup Modal -->
+
+        <div id="popup" class="fixed inset-0 items-center justify-center bg-black bg-opacity-50 hidden z-50 w-screen">
+            <div class="glass-effect p-6 pt-8 rounded-lg shadow-lg relative backdrop-blur-lg w-[60%]">
+                <button id="close-popup" class="absolute top-2 right-2 text-[#01ffe9] hover:text-black text-2xl">&times;</button>
+                <div class="text-center font-bold text-white">
+                    <div class="whatsapp-icon w-20 h-20 mx-auto mb-4 overflow-hidden">
+                        <img src="https://w7.pngwing.com/pngs/758/665/png-transparent-new-logo-gmail-google-new-logos-icon.png" alt="WhatsApp Logo" class="w-full h-full object-cover">
+                    </div>
+                    <p class="text-lg drop-shadow-lg">Contact Me:</p>
+                    <a class="text-xl text-wrap break-words text-[#01ffe9]" href="https://mail.google.com/mail/u/0/#search/from%3Amubassamali128%40gmail.com" target="_blank">mubassamali128@gmail.com</a>
+                </div>
+            </div>
+        </div>
+    <script src="./script.js"></script>
+</body>
+
+</html>
