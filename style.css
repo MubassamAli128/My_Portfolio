@@ -5,6 +5,7 @@ body.light-theme {
     color: black;
 }
 
+
 body.light-theme .header {
     background-color: black;
 }
@@ -227,6 +228,10 @@ body.light-theme a {
 
 .overflow-hidden {
     overflow: hidden;
+}
+
+body.light-theme .testimonial h3 {
+    color: white; /* Override the color for the light theme */
 }
 
 /* Mobile responsiveness */
